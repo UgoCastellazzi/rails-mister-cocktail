@@ -1,18 +1,36 @@
-<h1>Cocktails#show</h1>
-<h2> <%= @cocktail.name %> </h2>
-
-<h4>Composition</h4>
-<% @doses.each do |dose| %>
-  <li> 
-    <%= dose.description %> of <%= dose.ingredient.name %>. 
-    <%= link_to "Delete", dose_path(dose.id), method: "delete" %>
-  </li>
-<% end %>
-
-<h4>Add a dose</h4>
-
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description%>
-  <%= f.association :ingredient %>
-  <%= f.submit %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="content">
+        <div class="cocktail-card">
+            <div class="cocktail-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= @cocktail.image %>')"></div>
+            <div class="cocktail-card-details">
+                <h2> <%= @cocktail.name %> </h2>
+                <hr>
+                <h4>Here is how to make it</h4>
+                <ul>
+                    <% @doses.each do |dose| %>
+                    <li> 
+                        <%= dose.description %> of <%= dose.ingredient.name %> 
+                        <%= link_to dose_path(dose.id), method: "delete" do %>
+                          <i class="fas fa-times"></i>
+                        <% end %>
+                    </li>
+                    <% end %>
+                </ul>
+                <div class="add-form">
+                  <h4>Need to add something?</h4>
+                  <%= simple_form_for [@cocktail, @dose] do |f| %>
+                  <%= f.input :description%>
+                  <%= f.association :ingredient %>
+                  <%= f.submit %>
+                  <% end %>
+                </div>
+                
+                
+            </div>
+       </div>
+      </div>  
+    </div>
+  </div>
+</div>

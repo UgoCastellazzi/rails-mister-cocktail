@@ -11,3 +11,27 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: #0c1821;
+  color: white;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  padding: 5px 20px;
+}
+
+hr {
+  background-color:white;
+}
+
+.content {
+  display:flex;
+  justify-content: center;
+}

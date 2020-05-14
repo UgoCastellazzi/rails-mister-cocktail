@@ -1,0 +1,65 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  flex-grow: 1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 1px;
+}
+
+.cocktail-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: $blue;
+  width: 70%;
+  border-radius: 4px;
+}
+
+.cocktail-card-image {
+  height: 300px;
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.cocktail-card-details {
+  width: 60%;
+  padding: 30px;
+}
+
+.add-form {
+  padding: 20px;
+  background-color: $light-gray;
+  border-radius: 4px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 200;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 100;
+}
+  
