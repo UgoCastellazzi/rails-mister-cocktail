@@ -1,7 +1,8 @@
 <div class="banner">
-  <div class="rotateimg180 image" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1570821574759-c104ca40f7b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2001&q=80);"></div>
-  <div>
-    <h1><em>What can I get you?</em></h1>
+    <div class="banner-image" style="background-image: url('https://images.unsplash.com/photo-1578664279548-eee4d985cb80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60')"></div>
+    <div class="banner-text">
+      <h1><em>"What can I get you?"</em></h1>
+    </div>
   </div>
 </div>
 
@@ -9,8 +10,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-        <h1>Browse our famous cocktails</h1>
-        <p>Mixology is a fine art</p>
+      <div class="cocktails-list">
         <div class="cards">
             <% @cocktails.each do |cocktail| %>
                 <%= link_to cocktail_path(cocktail) do %>
@@ -20,6 +20,7 @@
                 <% end %>
             <% end %>
         </div>
+      </div>
     </div>
   </div>
 </div>

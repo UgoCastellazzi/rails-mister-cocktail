@@ -1,12 +1,22 @@
 .banner {
   background-size: cover;
   background-position: center;
-  text-align: right;
-  height: 500px;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 0px 50px;
+}
+
+.banner-image {
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  width: 400px;
+  height: 100%;
+}
+
+.banner-text {
+  padding-left: 50px;
 }
   
 .banner h1 {
@@ -24,16 +34,14 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-.rotateimg180 {
-    -webkit-transform:rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+.rotateimg90 {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .image {
-  height: 500px;
-  width: 100%;
-  background-size: cover;
+  width: 500px;
 }
