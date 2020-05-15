@@ -43,6 +43,12 @@
   justify-content: space-between;
   width: 70%;
   border-radius: 4px;
+  position: relative;
+}
+
+.close-cross {
+  position: absolute;
+  right: 10px;
 }
 
 .cocktail-card-image {

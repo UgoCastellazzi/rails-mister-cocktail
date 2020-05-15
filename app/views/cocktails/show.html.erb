@@ -3,6 +3,9 @@
     <div class="col">
       <div class="content">
         <div class="cocktail-card">
+            <%= link_to root_path do %>
+              <i class="far fa-window-close close-cross"></i>
+            <% end %>
             <% if @cocktail.photo.attached?%>
               <div class="cocktail-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cl_image_path @cocktail.photo.key %>')"></div>
             <% else %>
