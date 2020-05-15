@@ -34,6 +34,13 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 1px;
   border: 1px solid white;
+  transition: 0.2s;
+}
+
+.card-category-last:hover {
+  color: $blue;
+  background-color: white;
+  text-shadow: none;
 }
 
 
