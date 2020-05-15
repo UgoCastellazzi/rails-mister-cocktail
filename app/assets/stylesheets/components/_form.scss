@@ -8,7 +8,7 @@
   text-align: start;
 }
 
-#dose_description {
+#dose_description, #dose_ingredient_id {
     width: 100%;
     background: transparent;
     border: 0;
@@ -25,13 +25,13 @@
     }
 }
 
-#dose_ingredient_id {
+#cocktail_name, #cocktail_photo {
     width: 100%;
     background: transparent;
     border: 0;
     border-bottom: 1px solid;
     padding: 0em 0 .1em;
-    font-size: 10px;
+    font-size: 14px;
     font-family: inherit;
     font-weight: 100;
     line-height: 2;

@@ -1,7 +1,16 @@
-<h1>Cocktails#new</h1>
-<p>Find me in app/views/cocktails/new.html.erb</p>
-<%= simple_form_for(@cocktail) do |f| %>
-  <%= f.input :name%>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="form-container">
+        <div class="add-form">
+          <h2>Create your cocktail</h2>
+          <%= simple_form_for (@cocktail) do |f| %>
+            <%= f.input :name%>
+            <%= f.input :photo, as: :file %>
+            <%= f.submit %>
+          <% end %>
+        </div>    
+      </div>
+    </div>
+  </div>
+</div>
