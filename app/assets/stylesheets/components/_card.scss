@@ -21,31 +21,50 @@
   border-radius: 1px;
 }
 
+.card-category-last {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 1px;
+  border: 1px solid white;
+}
+
+
 .cocktail-card {
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
-  background-color: $blue;
   width: 70%;
   border-radius: 4px;
 }
 
 .cocktail-card-image {
-  height: 300px;
+  height: 500px;
   width: 40%;
-  height: 100%;
   background-size: cover;
   background-position: center;
 }
 
-.cocktail-card-details {
+.cocktail-card-details-container {
   width: 60%;
-  padding: 30px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
 }
 
-.add-form {
+.cocktail-card-details {
+  // border: 1px solid $white;
   padding: 20px;
-  background-color: $light-gray;
-  border-radius: 4px;
+  text-align: center;
+  flex-grow: 1;
+  flex-direction: column
 }
 
 h2 {
@@ -62,4 +81,8 @@ p {
   font-size: 16px;
   font-weight: 100;
 }
-  
+
+.list-item-container {
+  display: flex;
+  justify-content: space-between;
+}

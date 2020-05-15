@@ -1,0 +1,68 @@
+.add-form {
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  margin-top: 40px;
+  text-align: start;
+}
+
+#dose_description {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid;
+    padding: 0em 0 .1em;
+    font-size: 10px;
+    font-family: inherit;
+    font-weight: 100;
+    line-height: 1.5;
+    color: inherit;
+    outline: none;
+    &::placeholder { 
+        color: hsla(0, 0%, 100%, 0.5);
+    }
+}
+
+#dose_ingredient_id {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid;
+    padding: 0em 0 .1em;
+    font-size: 10px;
+    font-family: inherit;
+    font-weight: 100;
+    line-height: 2;
+    color: inherit;
+    outline: none;
+    &::placeholder { 
+        color: hsla(0, 0%, 100%, 0.5);
+    }
+}
+
+.add-form label {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.add-form h4 {
+  font-size: 18px;
+}
+
+.add-form input {
+  width: 100%;
+  border-radius: 2px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: 0.2s;
+  padding: 10px;
+}
+
+.add-form input:hover {
+  color: $blue;
+  background-color: white;
+
+}

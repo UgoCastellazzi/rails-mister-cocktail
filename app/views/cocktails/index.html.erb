@@ -14,10 +14,21 @@
         <div class="cards">
             <% @cocktails.each do |cocktail| %>
                 <%= link_to cocktail_path(cocktail) do %>
-                  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cocktail.image %>')">
-                    <%= cocktail.name %>
-                  </div>
+                  <% if cocktail.photo.attached? %>
+                    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cl_image_path cocktail.photo.key %>')">
+                      <%= cocktail.name %>
+                    </div>
+                  <% else %>
+                    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cocktail.image %>')">
+                      <%= cocktail.name %>
+                    </div>
+                  <% end %>
                 <% end %>
+            <% end %>
+            <%= link_to new_cocktail_path do %>
+                <div class="card-category-last">
+                  Let me make mine...
+                </div>
             <% end %>
         </div>
       </div>
